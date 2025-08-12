@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Airbnb Clone</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body class="bg-white text-gray-800">
+  <header class="flex justify-between items-center px-6 py-4 shadow-md">
+    <img src="images\Airbnb-Logo.wine.png" class="h-16" alt="Airbnb" />
+
+    <div class="flex gap-6">
+      <button class="font-semibold text-black-500 border-b-2 border-pink-500 pb-1">
+        <img src="images\Homes.jpg" class="w-[30px] h-[30px] mb-[5px]" alt="Home Icon" />
+        Homes
+    </button>
+      <button class="text-black-500 hover:text-black">
+       <img src="images\Experience.jpg" class="w-[30px] h-[30px] mb-[5px]" alt="Experiences Icon" /> 
+        Experiences
+    </button>
+      <button class="text-black-500 hover:text-black">
+          <img src="images\Services.jpg" class="w-[30px] h-[30px] mb-[5px]" alt="Services Icon" />
+        Services</button>
+    </div>
+
+    <div class="flex items-center gap-4 text-black">
+      <a href="#" class="hover:underline">Become a host</a>
+      <i class="fa-solid fa-globe"></i>
+      <div class="w-6 h-6 bg-gray-200 rounded-full flex items-center justify-center"><i class="fa-solid fa-bars"></i></div>
+    </div>
+  </header>
+  <section class="bg-gray-100 py-4">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="bg-white rounded-full shadow-lg p-2 flex flex-wrap md:flex-nowrap justify-between items-center space-y-2 md:space-y-0 md:space-x-4">
+        
+      <div class="flex flex-col px-4 py-2">
+        <span class="text-xs text-gray-500 font-medium">Where</span>
+        <input type="text" placeholder="Search destinations" class="outline-none text-sm text-gray-800 placeholder-gray-400" />
+      </div>
+
+      <div class="flex flex-col px-4 py-2 border-l border-gray-200">
+        <span class="text-xs text-gray-500 font-medium">Check-in</span>
+        <input type="date" class="outline-none text-sm text-gray-800" />
+      </div>
+
+      <div class="flex flex-col px-4 py-2 border-l border-gray-200">
+        <span class="text-xs text-gray-500 font-medium">Check-out</span>
+        <input type="date" class="outline-none text-sm text-gray-800" />
+      </div>
+
+      <div class="flex flex-col px-4 py-2 border-l border-gray-200">
+        <span class="text-xs text-gray-500 font-medium">Who</span>
+        <input type="text" placeholder="Add guests" class="outline-none text-sm text-gray-800 placeholder-gray-400" />
+      </div>
+
+      <div class="ml-auto pr-4">
+        <button class="bg-rose-500 hover:bg-rose-600 text-white p-3 rounded-full">
+          🔍
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="max-w-6xl mx-auto px-4 py-8">
+    <h2 class="text-xl font-semibold mb-4">Popular homes in Varanasi ›</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div class="rounded-lg overflow-hidden shadow-sm border">
+        <div class="relative">
+          <img src="images\kenny-eliason-iAftdIcgpFc-unsplash.jpg" class="w-full h-48 object-cover" />
+          <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+          <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+        </div>
+        <div class="p-3 text-sm">
+          <h3 class="font-semibold">Home in Varanasi</h3>
+          <p class="text-gray-600">₹6,848 for 2 nights • ★ 5.0</p>
+        </div>
+      </div>
+
+        <div class="rounded-lg overflow-hidden shadow-sm border">
+            <div class="relative">
+            <img src="images\minh-pham-OtXADkUh3-I-unsplash.jpg" class="w-full h-48 object-cover" />
+            <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+            <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+            </div>
+            <div class="p-3 text-sm">
+            <h3 class="font-semibold">Apartment in Varanasi</h3>
+            <p class="text-gray-600">₹5,500 for 2 nights • ★ 4.8</p>
+            </div>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-sm border">
+            <div class="relative">
+            <img src="images\christopher-jolly-GqbU78bdJFM-unsplash.jpg" class="w-full h-48 object-cover" />
+            <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+            <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+            </div>
+            <div class="p-3 text-sm">
+            <h3 class="font-semibold">Guest house in Varanasi</h3>
+            <p class="text-gray-600">₹8,200 for 2 nights • ★ 4.9</p>
+            </div>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-sm border">
+            <div class="relative">
+            <img src="images\eduard-uY2kic9wlmc-unsplash.jpg" class="w-full h-48 object-cover" />
+            <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+            <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+            </div>
+            <div class="p-3 text-sm">
+            <h3 class="font-semibold">Flat in Varanasi</h3>
+            <p class="text-gray-600">₹4,500 for 2 nights • ★ 4.7</p>
+            </div>
+        </div>
+    </div>
+<section class="max-w-6xl mx-auto px-4 py-8">
+  <h2 class="text-xl font-semibold mb-4">Stay in Gurgaon District ›</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\chuttersnap-XG8kvYZtr04-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Flat in Gurugram</h3>
+        <p class="text-gray-600">₹7,200 for 2 nights • ★ 4.9</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\clay-banks-r8i3RwrVcRk-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Hotel in Gurugram</h3>
+        <p class="text-gray-600">₹5,900 for 2 nights • ★ 4.7</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\clay-banks-D2jmthaa8I0-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Flat in Gurugram</h3>
+        <p class="text-gray-600">₹9,000 for 2 nights • ★ 5.0</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\huy-nguyen-mVLMZiILyxM-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Apartment in Gurugram</h3>
+        <p class="text-gray-600">₹6,300 for 2 nights • ★ 4.8</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="max-w-6xl mx-auto px-4 py-8">
+  <h2 class="text-xl font-semibold mb-4">Homes in New Delhi ›</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\lotus-design-n-print-WgkA3CSFrjc-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Luxury Stay in Delhi</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹8,400 for 2 nights • ★ 4.9</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\chastity-cortijo-R-w5Q-4Mqm0-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Modern Apartment</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹6,500 for 2 nights • ★ 4.7</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\onno-zGKRmwzplVc-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Spacious Villa</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹10,200 for 2 nights • ★ 5.0</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\onno-zGKRmwzplVc-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Stylish Studio</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹5,800 for 2 nights • ★ 4.6</p>
+      </div>
+    </div>
+  </div>
+</section>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-8">
+  <h2 class="text-xl font-semibold mb-4">Available in Nainital this weekend ›</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\vicky-sim-VYRc_uIafIg-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Cottage in Bhimtal</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹7,200 for 2 nights • ★ 4.9</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\naomi-ellsworth-EMPLSuvDuhQ-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Villa in Bhimtal</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹6,400 for 2 nights • ★ 4.8</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\outsite-co-R-LK3sqLiBw-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Place to stay in Mukteshwar</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹8,000 for 2 nights • ★ 5.0</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\jason-briscoe-AQl-J19ocWE-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Home in Nainital</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹5,900 for 2 nights • ★ 4.7</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="max-w-6xl mx-auto px-4 py-8">
+  <h2 class="text-xl font-semibold mb-4">Check out homes in Jaipur ›</h2>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\hans-isaacson-p6pfOaavscc-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Flat in Jaipur</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹5,500 for 2 nights • ★ 4.9</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\spacejoy-65k2klkcvT8-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Top Rated</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Flat in Jaipur</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹6,200 for 2 nights • ★ 5.0</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\asr-design-studio-B22qL4LX4_8-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Apartment in Jaipur</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹7,200 for 2 nights • ★ 4.8</p>
+      </div>
+    </div>
+
+    <div class="rounded-lg overflow-hidden shadow-sm border">
+      <div class="relative">
+        <img src="images\michael-alake-iyeVnvg5yg4-unsplash.jpg" class="w-full h-48 object-cover" />
+        <span class="absolute top-2 left-2 bg-white text-xs px-2 py-1 rounded-full">Guest favourite</span>
+        <button class="absolute top-2 right-2 bg-white p-1 rounded-full">🤍</button>
+      </div>
+      <div class="p-3 text-sm">
+        <h3 class="font-semibold">Flat in Jaipur</h3>
+        <p class="text-gray-600 text-[12px] mt-0.5">₹5,900 for 2 nights • ★ 4.7</p>
+      </div>
+    </div>
+  </div>
+</section>
+  </section>
+
+    <footer class="border-t text-sm text-gray-700 px-6 py-10">
+       <section class="px-10 py-12 bg-white border-t">
+  <h2 class="text-xl font-semibold mb-8">Inspiration for future getaways</h2>
+      <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div>
+          <h3 class="font-semibold mb-2">Cabins</h3>
+          <p class="text-gray-600">United States</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Treehouses</h3>
+          <p class="text-gray-600">United States</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Yurt Rentals</h3>
+          <p class="text-gray-600">United Kingdom</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Beach Houses</h3>
+          <p class="text-gray-600">United States</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Castle Rentals</h3>
+          <p class="text-gray-600">United States</p>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Luxury Cabins</h3>
+          <p class="text-gray-600">United Kingdom</p>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 pt-6 border-t">
+        <div>
+          <h4 class="font-bold mb-2">Support</h4>
+          <ul class="space-y-1 text-gray-600">
+            <li>Help Centre</li>
+            <li>AirCover</li>
+            <li>Anti-discrimination</li>
+            <li>Disability support</li>
+            <li>Cancellation options</li>
+            <li>Report concern</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-2">Hosting</h4>
+          <ul class="space-y-1 text-gray-600">
+            <li>Airbnb your home</li>
+            <li>Airbnb your experience</li>
+            <li>Hosting resources</li>
+            <li>Community forum</li>
+            <li>Hosting class</li>
+            <li>Find a co-host</li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold mb-2">Airbnb</h4>
+          <ul class="space-y-1 text-gray-600">
+            <li>2025 Summer Release</li>
+            <li>Newsroom</li>
+            <li>Careers</li>
+            <li>Investors</li>
+            <li>Emergency stays</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center mt-10 pt-6 border-t">
+        <p class="text-xs text-gray-500">© 2025 Airbnb-C, Inc.</p>
+        <ul class="flex space-x-4 mt-2 md:mt-0 text-xs text-gray-500">
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Sitemap</li>
+          <li>Company details</li>
+        </ul>
+      </div>
+    </section>
+    </footer>
+  </body>
+</html>
